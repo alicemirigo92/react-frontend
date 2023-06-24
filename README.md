@@ -38,6 +38,11 @@
 > Hello-React-Front-End is a project which using React for Front-End of an application and display data coming from API.
 Back End Link(https://github.com/alicemirigo92/rails-backend.git)
 
+Rails API: http://127.0.0.1:3000/api/greetings
+link to your React app
+  Local:            http://localhost:3002
+  On Your Network:  http://192.168.0.103:3002
+
 ## 🛠 Built With <a name="built-with"></a>
  - react
  - Postgresql
