@@ -35,8 +35,8 @@
 
 # 📖 React Frontend <a name="about-project"></a>
 
-> Hello-React-Front-End is a project which using React for Front-End of an application and display data coming from API.
-Back End Link(https://github.com/alicemirigo92/rails-backend.git)
+> Hello-Rails-backend is a project which using React for Front-End of an application and display data coming from API.
+Back End Link(https://github.com/alicemirigo92/react-frontend.git)
 
 Rails API: http://127.0.0.1:3000/api/greetings
 link to your React app
