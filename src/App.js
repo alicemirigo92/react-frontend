@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { useDispatch } from 'react-redux';
+import {
+  Routes,
+  Route,
+  NavLink,
+} from 'react-router-dom';
+import { fetchGreeting } from './redux/greetings/greeting';
+import Greeting from './components/Greeting';
 
 function App() {
+  const dispatch = useDispatch();
+  const greet = () => {
+    dispatch(fetchGreeting());
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <nav>
+          <NavLink to="/Greeting" onClick={greet}>Greetings</NavLink>
+        </nav>
       </header>
-    </div>
+      <Routes>
+        <Route path="/Greeting" element={<Greeting />} />
+      </Routes>
+    </>
   );
 }
 
